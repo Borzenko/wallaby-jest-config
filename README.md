@@ -1,20 +1,22 @@
+
+```
 /* eslint-disable */
 module.exports = function () {
   return {
     files: [
-      'src/**/*.js',
-      'src/**/*.json',
-      'scripts/**/*js',
-      '!scripts/**/*test.js',
-      '!src/**/*test.js',
+      'folder/**/*.js',
+      'folder/**/*.json',
+      'anotherfolder/**/*js',
+      '!anotherfolder/**/*test.js',
+      '!folder/**/*test.js',
       'config/jest-global-setup.js',
       'config/jest-global-teardown.js',
       'config/jest-setup.js',
     ],
 
     tests: [
-      'src/**/*test.js',
-      'scripts/**/*test.js',
+      'folder/**/*test.js',
+      'anotherfolder/**/*test.js',
     ],
 
     env: {
@@ -37,3 +39,4 @@ module.exports = function () {
     },
   };
 };
+```
